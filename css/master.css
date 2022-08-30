@@ -8,18 +8,19 @@
 body
 {
   background-color: #3F5441;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .title
 {
-  display: flex;
-  padding-left: 1.6rem;
-  padding-bottom: 1.4rem;
-  margin-right: 44.6rem;
+  display: inline-flex;
+  padding-left: .6rem;
+  padding-bottom: 1.3rem;
+  padding-right: 1.08rem;
   color: lightgrey;
   background-color: #333946;
-  border-radius: 0 0 3rem 0;
+  border-radius: 0 0 2.8rem 0;
 }
 
 #name
