@@ -1,6 +1,6 @@
 *,html
 {
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Markazi Text', serif;
   margin: 0;
   padding: 0;
 }
@@ -8,25 +8,75 @@
 body
 {
   background-color: #3F5441;
-  width: 100vw;
-  height: 100vh;
 }
 
 .title
 {
-  display: inline-flex;
-  padding-left: .6rem;
+  display: block;
+  text-align: center;
   padding-bottom: 1.3rem;
-  padding-right: 1.08rem;
+  margin-top: 1rem;
   color: lightgrey;
   background-color: #333946;
-  border-radius: 0 0 2.8rem 0;
+  /* border-radius: 2.8rem; */
+}
+
+.bubbles
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #name
 {
-  font-size: 8rem;
+  font-size: 800%;
 }
+
+#port
+{
+  font-size: 200%;
+  margin-top: -1rem;
+}
+
+#projB
+{
+  font-size: 500%;
+  margin: 8%;
+  text-decoration: none;
+  color: lightgrey;
+}
+
+#contB
+{
+  font-size: 500%;
+  margin: 8%;
+  text-decoration: none;
+  color: lightgrey;
+}
+
+#blogB
+{
+  font-size: 500%;
+  margin: 8%;
+  text-decoration: none;
+  color: lightgrey;
+}
+
+#bubbles:hover
+{
+  color: salmon;
+  transition: color .3s ease-in-out;
+}
+
+#blog
+{
+  color: lightgrey;
+  font-size: 200%;
+  margin: 10%;
+}
+
+
 
 #ceo
 {
