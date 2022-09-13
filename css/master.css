@@ -10,96 +10,278 @@ body
   background-color: #3F5441;
 }
 
-.title
+@media screen and (min-width: 501px)
 {
-  display: block;
-  text-align: center;
-  padding-bottom: 1.3rem;
-  margin-top: 1rem;
-  color: lightgrey;
-  background-color: #333946;
-  /* border-radius: 2.8rem; */
-}
+  .title
+  {
+    display: flex;
+    padding-left: 1.3rem;
+    color: lightgrey;
+    background-color: #333946;
+    /* border-radius: 2.8rem; */
+  }
 
-.bubbles
-{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#name
-{
-  font-size: 800%;
-}
-
-#port
-{
-  font-size: 200%;
-  margin-top: -1rem;
-}
-
-#projB
-{
-  font-size: 500%;
-  margin: 8%;
-  text-decoration: none;
-  color: lightgrey;
-}
-
-#contB
-{
-  font-size: 500%;
-  margin: 8%;
-  text-decoration: none;
-  color: lightgrey;
-}
-
-#blogB
-{
-  font-size: 500%;
-  margin: 8%;
-  text-decoration: none;
-  color: lightgrey;
-}
-
-#bubbles:hover
-{
-  color: salmon;
-  transition: color .3s ease-in-out;
-}
-
-#blog
-{
-  color: lightgrey;
-  font-size: 200%;
-  margin: 8%;
-}
-
-
-
-#ceo
-{
-  font-size: 2rem;
-  margin-left: -13.1rem;
-  margin-top: 7.5rem;
-}
-
-#ceoLink
-{
+  #name
+  {
+    font-size: 4rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
     text-decoration: none;
     color: lightgrey;
+    transition: .2s ease-in-out;
+  }
+
+  #name:hover
+  {
+    color: white;
+  }
+
+  #square
+  {
+    text-decoration: none;
+    color: lightgrey;
+    font-size: 8rem;
+    margin-bottom: -2rem;
+    margin-top: -2.5rem;
+    transition: .2s ease-in-out;
+  }
+
+  #square:hover
+  {
+    color: white;
+  }
+
+  #port
+  {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    opacity: 80%;
+  }
+
+  #self
+  {
+    width: 30rem;
+    height: 30rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    border-radius: 10%;
+  }
+
+  #picText
+  {
+    margin-left: 25%;
+  }
+
+  /* .about
+  {
+    color: lightgrey;
+    float: left;
+    width: 50%;
+    font-size: 2rem;
+  } */
+
+  .pic
+  {
+    float: left;
+    width: 50%;
+    color: lightgrey;
+  }
+
+  /* .bubbles
+  {
+    display: block;
+  } */
+
+  #PB
+  {
+    text-align: right;
+    font-size: 5rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+  }
+
+  #B
+  {
+    text-decoration: none;
+    color: lightgrey;
+  }
+
+  #B:hover
+  {
+    color: plum;
+    transition: color .3s ease-in-out;
+  }
+
+  #blog
+  {
+    color: lightgrey;
+    font-size: 200%;
+    margin: 8%;
+  }
+
+
+
+  #ceo
+  {
+    font-size: 2rem;
+    margin-left: -13.1rem;
+    margin-top: 7.5rem;
+  }
+
+  #ceoLink
+  {
+      text-decoration: none;
+      color: lightgrey;
+  }
+
+  #ceoLink:hover
+  {
+    color: salmon;
+    transition: color .3s ease-in-out;
+  }
+
+  #kek
+  {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
 }
 
-#ceoLink:hover
+@media screen and (max-width: 500px)
 {
-  color: salmon;
-  transition: color .3s ease-in-out;
-}
+  .title
+  {
+    display: flex;
+    padding-left: 1.3rem;
+    color: lightgrey;
+    background-color: #333946;
+    /* border-radius: 2.8rem; */
+  }
 
-#kek
-{
-  position: absolute;
-  height: 100%;
-  width: 100%;
+  #name
+  {
+    font-size: 4rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    text-decoration: none;
+    color: lightgrey;
+    transition: .2s ease-in-out;
+  }
+
+  #name:hover
+  {
+    color: white;
+  }
+
+  #square
+  {
+    text-decoration: none;
+    color: lightgrey;
+    font-size: 8rem;
+    margin-bottom: -2rem;
+    margin-top: -2.5rem;
+    transition: .2s ease-in-out;
+  }
+
+  #square:hover
+  {
+    color: white;
+  }
+
+  #port
+  {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    opacity: 80%;
+  }
+
+  #self
+  {
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+  }
+
+  #picText
+  {
+    text-align: center;
+  }
+
+  /* .about
+  {
+    color: lightgrey;
+    float: left;
+    width: 50%;
+    font-size: 2rem;
+  } */
+
+  .pic
+  {
+    color: lightgrey;
+  }
+
+  /* .bubbles
+  {
+    display: block;
+  } */
+
+  #PB
+  {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 1rem;
+  }
+
+  #B
+  {
+    text-decoration: none;
+    color: lightgrey;
+  }
+
+  #B:hover
+  {
+    color: plum;
+    transition: color .3s ease-in-out;
+  }
+
+  #blog
+  {
+    color: lightgrey;
+    font-size: 200%;
+    margin: 8%;
+  }
+
+
+
+  #ceo
+  {
+    font-size: 2rem;
+    margin-left: -13.1rem;
+    margin-top: 7.5rem;
+  }
+
+  #ceoLink
+  {
+      text-decoration: none;
+      color: lightgrey;
+  }
+
+  #ceoLink:hover
+  {
+    color: salmon;
+    transition: color .3s ease-in-out;
+  }
+
+  #kek
+  {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+}
 }
