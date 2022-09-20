@@ -313,5 +313,10 @@ body
     padding-right: .4rem;
     font-size: 1.4rem;
   }
+  #gbtxt
+  {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 }
