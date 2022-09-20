@@ -1,20 +1,21 @@
-let txt=document.getElementById("gbtxt");
-let button=document.getElementById("subButton");
-let name=document.getElementById("nameInput").value;
-var selectedGenre=document.getElementsByName("radioz");
-let genre;
-
-button.addEventListener('click',text);
+// button.addEventListener('submit',text);
 
 function text()
 {
-  button.onSubmit=event.preventDefault();
-  for(let i of selectedGenre)
+  event.preventDefault();
+  let genre;
+  if(document.getElementById("metal").checked)
   {
-    if(selectedGenre.checked)
-    {
-      genre=i.id;
-    }
+    genre="metal";
   }
-  txt.innerHTML="Hi "+name+"! You have good taste since you like "+genre+".";
+  else if(document.getElementById("jazz").checked)
+  {
+    genre="jazz";
+  }
+  else if(document.getElementById("classical").checked)
+  {
+    genre="classical";
+  }
+  document.getElementById("gbtxt").innerHTML="Hi "+document.getElementById("nameInput").value+"! You have good taste since you like "+
+  genre+".";
 }
