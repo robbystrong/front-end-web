@@ -93,6 +93,22 @@ body
     display: block;
   } */
 
+  .text
+  {
+    font-size: 4rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    text-decoration: none;
+    color: lightgrey;
+    transition: .2s ease-in-out;
+  }
+
+  .text:hover
+  {
+    color: plum;
+    transition: color .3s ease-in-out;
+  }
+
   #PB
   {
     text-align: right;
@@ -120,32 +136,31 @@ body
     margin: 8%;
   }
 
-
-
-  #ceo
+  .form
   {
+    display: block;
+    justify-content: center;
+  }
+
+  #from
+  {
+    text-align: center;
     font-size: 2rem;
-    margin-left: -13.1rem;
-    margin-top: 7.5rem;
+    text-decoration: none;
+    color: lightgrey;
+    transition: .2s ease-in-out;
   }
 
-  #ceoLink
+  #radioz
   {
-      text-decoration: none;
-      color: lightgrey;
+    padding-right: 2rem;
   }
 
-  #ceoLink:hover
+  #subButton
   {
-    color: salmon;
-    transition: color .3s ease-in-out;
-  }
-
-  #kek
-  {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -225,6 +240,22 @@ body
     color: lightgrey;
   }
 
+
+  .text
+  {
+    font-size: 4rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    text-decoration: none;
+    color: lightgrey;
+    transition: .2s ease-in-out;
+  }
+
+  .text:hover
+  {
+    color: plum;
+    transition: color .3s ease-in-out;
+  }
   /* .bubbles
   {
     display: block;
@@ -233,7 +264,7 @@ body
   #PB
   {
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     margin-top: 1rem;
   }
 
