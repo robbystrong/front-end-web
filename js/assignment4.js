@@ -1,23 +1,11 @@
-function duckImg()
+function getApi()
 {
-  url="https://dog.ceo/api/breeds/image/random";
-
-  fetch(url)
-    .then(function(response)
+  fetch('http://numbersapi.com/random')
+    .then(res=>
     {
-      return response.json;
+      return res.text();
+    }).then(data=>
+    {
+      document.getElementById('apInfo').innerHTML=data;
     })
-    .then(function(data)
-    {
-      console.log(data);
-    })
-    .catch(function(error)
-    {
-      console.log("Error: " + error);
-    });
-}
-
-function displayImg(image)
-{
-  document.getElementById('apimg').src=image;
 }
