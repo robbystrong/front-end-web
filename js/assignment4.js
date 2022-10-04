@@ -1,6 +1,6 @@
 function getApi()
 {
-  fetch('//numbersapi.com/random')
+  fetch('http://numbersapi.com/random')
     .then(res=>
     {
       return res.text();
