@@ -1,11 +1,9 @@
 function getApi()
 {
-  fetch('http://numbersapi.com/random')
-    .then(res=>
-    {
-      return res.text();
-    }).then(data=>
-    {
-      document.getElementById('apInfo').innerHTML=data;
-    })
+  fetch('https://asli-fun-fact-api.herokuapp.com/')
+    .then(res=>res.json())
+    .then(object=>
+      {
+        document.getElementById('apInfo').innerHTML=object.data.fact;
+      });
 }
