@@ -14,7 +14,8 @@
     <label for="name">Select a Level of Difficulty</label>
     <br>
     <form id="diffSelect">
-      <select name="difficulty" id="difficulty">
+      <select id="difficultySlct">
+        <option value="select">Select</option>
         <option value="1">Level 1</option>
         <option value="2">Level 2</option>
         <option value="3">Level 3</option>
@@ -22,6 +23,9 @@
         <option value="5">Level 5</option>
       </select>
     </form>
-    <button id="get">Get Music</button>
+    <button id="get" onclick="getMusic()">Get Music</button>
+    <div id="musicDisplay">
+      <embed id="musicPDF" src="" />
+    </div>
   </body>
 </html>
