@@ -1,10 +1,13 @@
+document.getElementById('granim-canvas').addEventListener("click", change);
+let num=0;
+
 var granimInstance = new Granim({
    element: '#granim-canvas',
    name: 'granim',
    opacity: [1, 1],
    direction: 'top-bottom',
    image: {
-     source: '../pix/abstractPepe.jpg',
+     source: '../pix/grumpyCat.jpg',
      blendingMode: 'multiply',
    },
    states : {
@@ -15,6 +18,19 @@ var granimInstance = new Granim({
                ['#c0e40d', '#eb1487']
            ],
            transitionSpeed: 6000,
-       }
-   }
+       },
+   },
 });
+
+function change()
+{
+  if(num%2===0)
+  {
+    granimInstance.changeBlendingMode('exclusion');
+  }
+  else
+  {
+    granimInstance.changeBlendingMode('multiply');
+  }
+  num++;
+}
