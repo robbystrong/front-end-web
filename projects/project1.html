@@ -7,25 +7,43 @@
     <link rel="stylesheet" href="../css/project1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Markazi+Text&display=swap" rel="stylesheet">
-    <script src="../js/project1.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <label for="name">Select a Level of Difficulty</label>
-    <br>
-    <form id="diffSelect">
-      <select id="difficultySlct">
-        <option value="select">Select</option>
-        <option value="1">Level 1</option>
-        <option value="2">Level 2</option>
-        <option value="3">Level 3</option>
-        <option value="4">Level 4</option>
-        <option value="5">Level 5</option>
-      </select>
-    </form>
-    <button id="get" onclick="getMusic()">Get Music</button>
-    <div id="musicDisplay">
-      <embed id="musicPDF" src="" />
+    <div id="header">
+      <h1 id="clef"></h1>
+      <h1 id="title">𝄞 UN𝄽CODE CLEF 𝄞</h1>
+    </div>
+    <div id="main">
+      <div id="selectionArea">
+        <label for="name" id="slctTxt">Select a Level of Difficulty</label>
+        <form id="diffSelect">
+          <!-- <input type="radio" id=difficultySlct name="difficultySlct" value="1">Level 1</input>
+          <br>
+          <input type="radio" id=difficultySlct name="difficultySlct" value="2">Level 2</input>
+          <br>
+          <input type="radio" id=difficultySlct name="difficultySlct" value="3">Level 3</input>
+          <br>
+          <input type="radio" id=difficultySlct name="difficultySlct" value="4">Level 4</input>
+          <br>
+          <input type="radio" id=difficultySlct name="difficultySlct" value="5">Level 5</input> -->
+          <select id="difficultySlct">
+            <option value="select">Select</option>
+            <option value="1">Level 1</option>
+            <option value="2">Level 2</option>
+            <option value="3">Level 3</option>
+            <option value="4">Level 4</option>
+            <option value="5">Level 5</option>
+          </select>
+        </form>
+        <button id="get">Get Music</button>
+      </div>
+      <a href="" id="newTab" target="_blank">Open Music in New Tab</a>
+      <div id="musicDisplay">
+        <embed id="musicPDF" src=""/>
+      </div>
     </div>
   </body>
+  <script src="../js/project1.js"></script>
 </html>
